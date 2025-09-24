@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddStudentController" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: #f9fbff;">
+    <HBox style="-fx-background-color: #1e2a78;" prefHeight="60" alignment="CENTER_LEFT"><Label text="   Add Customer" style="-fx-text-fill: white; -fx-font-size: 20; -fx-font-weight: bold;" />
+    </HBox>
+
+    <VBox spacing="20" layoutX="150" layoutY="120">
+        <HBox spacing="15"><Label text="Student ID" prefWidth="120"/><TextField fx:id="txtStudentId" prefWidth="300"/></HBox>
+        <HBox spacing="15"><Label text="Name" prefWidth="120"/><TextField fx:id="txtName" prefWidth="300"/></HBox>
+        <HBox spacing="15"><Label text="NIC" prefWidth="120"/><TextField fx:id="txtNic" prefWidth="300"/></HBox>
+        <HBox spacing="15"><Label text="Phone" prefWidth="120"/><TextField fx:id="txtPhone" prefWidth="300"/></HBox>
+        <HBox spacing="15"><Label text="Email" prefWidth="120"/><TextField fx:id="txtEmail" prefWidth="300"/></HBox>
+    </VBox>
+    <HBox spacing="20" layoutX="250" layoutY="400"><Button text="CANCEL" prefWidth="120" style="-fx-background-color: #c0c0c0; -fx-font-weight: bold;" onAction="#handleCancel"/>
+        <Button text="ADD Student" prefWidth="150" style="-fx-background-color: #1e2a78; -fx-text-fill: white; -fx-font-weight: bold;" onAction="#handleAddStudent"/>
+    </HBox>
+</AnchorPane>
+
