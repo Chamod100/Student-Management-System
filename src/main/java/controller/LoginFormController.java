@@ -19,6 +19,7 @@ public class LoginFormController {
     }
 
     public void btnBatch(ActionEvent actionEvent) {
+
     }
 
     public void btnGrade(ActionEvent actionEvent) {
